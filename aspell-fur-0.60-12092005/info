@@ -1,0 +1,10 @@
+name_english Friulian
+lang fur
+version 0.60-1
+charset iso8859-1
+soundslike fur
+copyright GPL
+alias fur friulian
+dict:
+  name fur
+  add fur

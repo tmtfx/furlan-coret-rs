@@ -1,0 +1,37 @@
+Se Aspell al è instalât e 'aspell' e 'word-list-compress' a son
+tal path par tacâ scrîf:
+
+  ./configure
+
+Al varès di vignî produsût un output come chest:
+
+  Finding Dictionary file location ... /usr/local/lib/aspell
+  Finding Data file location ... /usr/local/share/aspell
+
+câs contrari probabilmentri alc al è falât.
+
+Podopo fâs sù il pachet cun:
+  make
+e daspò, cui permès che a coventin, instalilu cun:
+  make install
+
+Se cualchidun dai programs nomenâts parsore no son tal to path alore si 
+scuen impuestâ lis variabilis  ASPELL e/o WORD_LIST_COMPRESS cul percors
+dal program.  Chestis variabilis a puedin jessi impuestadis tal ambient
+prin di inviâ configure o si pues specificâlis te linie di comant cun cheste sintassi
+  ./configure --vars VAR1=VAL1 ...
+Altris variabilis che configure al ricognòs a son ASPELL_PARMS e DESTDIR.
+
+Par netâ daspò la costruzion dal pachet:
+  make clean
+
+Par disinstalâ i file:
+  make uninstall
+
+Daspò instalade la liste des peraulis si pues doprâle impuestant
+la variabil di ambient LANG=fur o inviant Aspell
+cun --lang=fur.  Si pues ancje sielzi il dizionari diretementri cun
+lis opzions  -d o --master seguidis dal non dal dizionari: fur o friulian. 
+es. 	aspell -d fur
+	aspell -f friulian
+
